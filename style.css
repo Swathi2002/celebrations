@@ -1,0 +1,252 @@
+*{
+	padding: 0px;
+	margin:0px;
+	box-sizing: border-box; 
+}
+.main{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: white;
+	border:none;
+	border-radius: 5px;
+	width:100%;
+}
+.main img{
+	margin-left: 50px;
+}
+.main h1{
+	margin-left:400px;
+	padding:20px;
+	font-size: 40px;
+	color: crimson;
+}
+.nav{
+	font-size: 20px;
+	text-decoration: none;
+	background-color: dimgrey;
+	border:none;
+	border-radius: 5px;
+	padding: 1%;
+}
+.nav a{
+	color: white;
+	text-decoration: none;
+	padding-left: 125px;
+	margin: 2%;
+}
+.head{
+	background:url(home.jpg)no-repeat center scroll; 
+	margin-top: 5px;
+	border:none;
+	border-radius: 5px;
+}
+html{
+	font-size: 40px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+.container{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items:center;
+	justify-content: center; 
+}
+/* head */
+.head{
+	min-height:100vh;
+	width: 100%;
+	padding-top: 50px;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+}
+/* end of head*/
+/* header*/
+.header{
+	width: 100%;
+	text-align: center;
+}
+.header-heading{
+	color:red;
+	font-weight: 500;
+}
+.header-subheading{
+	font-size: 15px;
+	color:blue;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+}
+.header-button{
+	margin-top: 60px;
+	padding:10px;
+	background-color: darkgrey;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	color: blue;
+	letter-spacing: 1px;
+}
+.header h5{
+	font-size: 20px;
+	color: blue;
+}
+.second{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: aqua;
+	border:none;
+	border-radius: 5px;
+	margin-top: 5px;
+}
+.second .desc{
+	width: 30%;
+	height: 10%;
+	font-size: 20px;
+	text-align: left;
+	border:none;
+	border-radius: 5px;
+	padding: 1%;
+	margin: 2% 1% 2% 5%;
+}
+.second .desc h2{
+	color: crimson;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	opacity: 0.85;
+}
+.second .images{
+	width:60%;
+	height: 10%;
+	padding: 1%;
+	margin-bottom:5%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+}
+.second .images div{
+	width: 300px;
+	height: 200px;
+	margin:5%;
+	padding:2%;
+}
+.second .images div img{
+	border:4px solid #fff;
+	width: 350px;
+	height: 250px;
+	margin: 3%;
+}
+.second .images div img:hover{
+	transition: all 2s ease 0s;
+	width: 320px;
+	height: 220px;
+}
+footer{
+	background-color: dimgrey;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	border:none;
+	border-radius: 2px;
+	margin-top:5px; 
+}
+@media only screen and (min-width: 320px) and (max-width: 767px){
+	html{
+		font-size: 20px;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	.main{
+		flex-direction: row;
+		width:100%;
+	}
+	.main img{
+		margin-left: 1px;
+		width: 25%;
+	}
+	.main h1{
+		margin-left:100px;
+		padding:5px;
+		font-size: 20px;
+		color: crimson;
+	}
+	.header-subheading{
+		font-size: 15px;
+		color:blue;
+		letter-spacing: 1px;
+	}
+	.header-button{
+		margin-top: 60px;
+		padding:4px;
+		font-size: 15px;
+	}
+	.second{
+		flex-direction: row;
+		background-color: pink;
+	}
+	.second .images div img{
+		border:4px solid #fff;
+		width: 225px;
+		height: 225px;
+		margin: 5%;
+		margin-top: 40%;
+	}
+	.second .images div img:hover{
+		transition: all 2s ease 0s;
+		width: 200px;
+		height: 200px;
+	}
+	.second .desc{
+		width: 20%;
+		height: 5%;
+		font-size: 15px;
+		border:none;
+		border-radius: 5px;
+		padding: 1%;
+		margin: 2% 1% 2% 5%;
+	}
+	footer{
+		font-size: 8px;
+		text-align: left;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+	.main{
+		flex-direction: row;
+		width: 100%;
+	}
+	.main h1{
+		margin-left:180px;
+		padding:10px;
+		font-size: 30px;
+	}
+	.nav{
+		font-size: 20px;
+	}
+	.nav a{
+		padding-left: 50px;
+		margin:1%;
+	}
+	.head{
+		margin-top: 0px;
+		width: 100%;
+		min-height:100vh;
+		padding-top: 0px;
+	}
+	.second{
+		flex-direction: row;
+		background-color: pink;
+		margin-top: 0px;
+		padding: 4%;
+	}
+	.second .images{
+		width: 40%;
+	}
+	.second .images div img{
+		border:2px solid #fff;
+		width: 250px;
+		height: 250px;
+		margin: 5%;
+	}
+}
